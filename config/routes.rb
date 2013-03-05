@@ -1,9 +1,9 @@
 Fiist::Application.routes.draw do
+  devise_for :users
+
   resources :microposts
 
-
-  resources :users
-
+  root :to => 'microposts#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
