@@ -2,6 +2,8 @@ Fiist::Application.routes.draw do
   devise_for :users
 
   resources :microposts
+  
+  resources :dummy
 
   root :to => 'microposts#index'
 
